@@ -1,0 +1,9 @@
+.mainFxmlClass {
+-fx-background-color:#61daf2;    
+}
+.corpo{
+    -fx-background-color: #f0f4f5;
+}
+.topo{
+    -fx-background-color: #faf202;
+}

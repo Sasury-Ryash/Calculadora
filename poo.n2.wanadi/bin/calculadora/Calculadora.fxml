@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="550.0" style="-fx-background-color: #836FFF;" styleClass="card" stylesheets="@designcal.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxcalculdora.CalculadoraController">
+   <children>
+      <TabPane fx:id="tabpane" layoutY="-1.0" prefHeight="720.0" prefWidth="550.0" styleClass="main" stylesheets="@designcal.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab" text="Bem vindo a calculadora!">
+            <content>
+              <AnchorPane id="fundo-de-tela" blendMode="SRC_ATOP" minHeight="0.0" minWidth="0.0" prefHeight="686.0" prefWidth="544.0">
+                     <children>
+                        <TextField fx:id="telaPadraoTextField" alignment="CENTER" layoutX="51.0" layoutY="38.0" prefHeight="97.0" prefWidth="449.0" style="-fx-background-color: lightblue;" styleClass="keyresult" stylesheets="@designcal.css">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <Blend>
+                                 <topInput>
+                                    <InnerShadow />
+                                 </topInput>
+                              </Blend>
+                           </effect>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor></TextField>
+                        <Button fx:id="acButton" layoutX="376.0" layoutY="208.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="122.0" stylesheets="@designcal.css" text="AC" textFill="#f21f1f">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="divisaoButton" layoutX="296.0" layoutY="208.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="/">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="multiplicacaoButton" layoutX="296.0" layoutY="373.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="X">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="noveButton" layoutX="216.0" layoutY="208.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="9">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="oitoButton" layoutX="136.0" layoutY="208.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="8">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="seteButton" layoutX="56.0" layoutY="208.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="7">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="seisButton" layoutX="216.0" layoutY="263.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="6">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="subtracaoButton" layoutX="296.0" layoutY="318.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="-">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="cincoButton" layoutX="136.0" layoutY="263.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="5">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="quatroButton" layoutX="56.0" layoutY="263.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="4">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="tresButton" layoutX="216.0" layoutY="318.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="3">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="doisButtton" layoutX="136.0" layoutY="318.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="2">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="somaButton" layoutX="296.0" layoutY="263.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="+">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="umButton" layoutX="56.0" layoutY="318.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="1">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="zeroButton" layoutX="56.0" layoutY="373.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="pontoButton" alignment="TOP_CENTER" layoutX="136.0" layoutY="373.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="." textAlignment="CENTER">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="22.0" />
+                           </font></Button>
+                        <Button fx:id="igualButton" layoutX="376.0" layoutY="263.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="122.0" stylesheets="@designcal.css" text="=" textFill="#2c9428">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="40.0" />
+                           </font></Button>
+                        <Button fx:id="porcentagemButton" layoutX="216.0" layoutY="373.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="\%">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="quadradaButton" layoutX="443.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="55.0" styleClass="keypad" stylesheets="@../../build/classes/javafxcalculdora/designcal.css" text="√">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="elevarButton" layoutX="296.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="x²">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="piButton" layoutX="376.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="67.0" styleClass="keypad" stylesheets="@designcal.css" text="π">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="senButton" layoutX="56.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="sen">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="cosButton" layoutX="136.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="cos">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                        <Button fx:id="tanButton" layoutX="216.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="tan">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="18.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+   <effect>
+      <Blend opacity="0.71">
+         <topInput>
+            <ColorInput>
+               <paint>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </paint>
+            </ColorInput>
+         </topInput>
+      </Blend>
+   </effect>
+</Pane>
